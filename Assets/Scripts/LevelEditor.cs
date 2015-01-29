@@ -118,8 +118,8 @@ public class LevelEditor : Commons {
 			mousepos.z=Camera.main.transform.position.z;
 			//Debug.Log(Camera.main.ScreenToWorldPoint(mousepos));
 			Vector3 tempposition = Camera.main.ScreenToWorldPoint(mousepos);
-			tempposition.x=(tempposition.x*-1.0f)+Camera.main.transform.position.x;
-			tempposition.y=(tempposition.y*-1.0f)+Camera.main.transform.position.y;
+			tempposition.x=(tempposition.x*-1.0f)+(Camera.main.transform.position.x*2);
+			tempposition.y=(tempposition.y*-1.0f)+(Camera.main.transform.position.y*2);
 			tempposition.z=0;
 			//Debug.Log(tempposition.ToString());
 			target.transform.position=tempposition;
