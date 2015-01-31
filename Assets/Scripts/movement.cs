@@ -1028,7 +1028,7 @@ public class movement : Commons {
 		}
 	}
 	
-	Void OnTriggerStay(Collider hit)
+	void OnTriggerStay(Collider hit)
 	{
 		if(hit.gameObject.tag=="water" || hit.gameObject.tag=="DeepWater")
 		{

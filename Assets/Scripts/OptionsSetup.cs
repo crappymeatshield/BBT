@@ -24,27 +24,10 @@ public class OptionsSetup : Commons {
 		ControllerConfig.Add(reset);
 		KeyCode[] pause = new KeyCode[2]{KeyCode.Escape, KeyCode.P};//8
 		ControllerConfig.Add(pause);
-
-		int[] option1 = new int[2]{800, 600};
-		ResolutionOptions.Add(option1);
-		int[] option2 = new int[2]{1024, 768};
-		ResolutionOptions.Add(option2);
-		int[] option3 = new int[2]{1280, 720};
-		ResolutionOptions.Add(option3);
-		int[] option4 = new int[2]{1360, 768};
-		ResolutionOptions.Add(option4);
-		int[] option5 = new int[2]{1366, 768};
-		ResolutionOptions.Add(option5);
-		int[] option6 = new int[2]{1600, 900};
-		ResolutionOptions.Add(option6);
-		int[] option7 = new int[2]{1920, 1080};
-		ResolutionOptions.Add(option7);
-		int[] option8 = new int[2]{2560, 1440};
-		ResolutionOptions.Add(option8);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		ResolutionOptions = Screen.resolutions;
+		foreach (Resolution res in ResolutionOptions) 
+		{
+			Debug.Log (res.width.ToString ()+" x " +res.height.ToString());
+		}
 	}
 }

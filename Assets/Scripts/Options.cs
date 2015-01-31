@@ -7,11 +7,6 @@ public class Options : Commons {
 	private bool bEditingControls=false;
 	private int nControlCounter=0;
 	private int primsec=0;
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	void OnGUI()
 	{
