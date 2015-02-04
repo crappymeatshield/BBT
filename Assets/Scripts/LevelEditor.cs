@@ -753,6 +753,7 @@ public class LevelEditor : Commons {
 							if(turtlethere)
 							{
 								wname = new WWW(ipmain + "getlevel.php?name="+levelname);
+								Debug.Log("starting name check");
 								StartCoroutine(checkname(wname));
 								checknamebool=true;
 								//print(wname.text);
@@ -1016,39 +1017,41 @@ public class LevelEditor : Commons {
 	IEnumerator UploadLevel(WWW w)
 	{
 		yield return w;
-		print("after yield w");
-		print (w.text.ToString());
+		Debug.Log("after yield wul");
+		Debug.Log(w.text.ToString());
 		if (w.error != null)
 		{
-			print("error");
-			print ( w.error );    
+			Debug.Log("error");
+			Debug.Log( w.error );    
 		}
 		else if(w.text.ToString()=="Error: Unable to open or create file!")
 		{
-			print (w.text.ToString());
+			Debug.Log(w.text.ToString());
 		}
 		else
 		{
+			Debug.Log("File Created starting checkfile");
 			StartCoroutine(checkfile(w));
 		}
 	}
 
 	IEnumerator checkfile(WWW w)
 	{
-		print("upload progress: "+w.uploadProgress.ToString());
+		Debug.Log("upload progress: "+w.uploadProgress.ToString());
+		Debug.Log("w.isDone = " + w.isDone.ToString());
 		//this part validates the upload, by waiting 5 seconds then trying to retrieve it from the web
 		if(w.uploadProgress == 1 && w.isDone)
 		{
 			yield return new WaitForSeconds(5);
 			//change the url to the url of the folder you want it the levels to be stored, the one you specified in the php file
-			w2 = new WWW(ipmain +"BBT/CustomLevels/" + fileName);
-			print("checking file...");
+			w2 = new WWW(ipmain +"BBT/CustomLevels/" + fileName+".xml");
+			Debug.Log("checking file...");
 			yield return w2;
-			print("after yield w2");
+			Debug.Log("after yield w2cf");
 			if(w2.error != null)
 			{
-				print("error 2");
-				print ( w2.error );  
+				Debug.Log("error 2");
+				Debug.Log( w2.error );  
 			}
 			else
 			{
@@ -1056,12 +1059,12 @@ public class LevelEditor : Commons {
 				if(w2.text != null && w2.text != "")
 				{
 					//and finally announce that everything went well
-					print ( "Level File " + fileName + " Contents are: \n\n" + w2.text);
-					print ( "Finished Uploading Level " + fileName);
+					Debug.Log( "Level File " + fileName + " Contents are: \n\n" + w2.text);
+					Debug.Log( "Finished Uploading Level " + fileName);
 				}
 				else
 				{
-					print ( "Level File " + fileName + " is Empty");
+					Debug.Log( "Level File " + fileName + " is Empty");
 				}
 			}
 		} 
