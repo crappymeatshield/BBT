@@ -10,7 +10,7 @@ public class LevelSelect : achievements {
 	public int levelnum=0;
 	public bool bonuslevel=false;
 	private bool bonusunlocked=false;
-	private int nonlevelscenes=4;
+	private int nonlevelscenes=2;
 	private int regularlevels=2;
 	private bool showing=false;
 	// Use this for initialization

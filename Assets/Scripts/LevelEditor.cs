@@ -752,7 +752,7 @@ public class LevelEditor : Commons {
 						{
 							if(turtlethere)
 							{
-								wname = new WWW("http://76.29.1.122/getlevel.php?name="+levelname);
+								wname = new WWW(ipmain + "getlevel.php?name="+levelname);
 								StartCoroutine(checkname(wname));
 								checknamebool=true;
 								//print(wname.text);
@@ -772,7 +772,7 @@ public class LevelEditor : Commons {
 								form.AddField("filename", fileName);
 								form.AddField("filetext", strwrite.ToString());
 								//form.AddBinaryData("file", leveldata, fileName, "text/xml");
-								w = new WWW("http://76.29.1.122/LevelUpload.php",form);
+								w = new WWW(ipmain + "LevelUpload.php",form);
 							}
 							else
 							{
@@ -1041,7 +1041,7 @@ public class LevelEditor : Commons {
 		{
 			yield return new WaitForSeconds(5);
 			//change the url to the url of the folder you want it the levels to be stored, the one you specified in the php file
-			w2 = new WWW("http://729.29.1.122/BBT/CustomLevels/" + fileName);
+			w2 = new WWW(ipmain +"BBT/CustomLevels/" + fileName);
 			print("checking file...");
 			yield return w2;
 			print("after yield w2");

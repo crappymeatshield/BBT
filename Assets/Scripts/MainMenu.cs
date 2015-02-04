@@ -272,7 +272,7 @@ public class MainMenu : Commons {
 				camera=GameObject.FindGameObjectWithTag("MainCamera");
 				CustomLevelGUI control = (CustomLevelGUI) camera.gameObject.GetComponent(typeof(CustomLevelGUI));
 				control.loadCustom=true;
-				control.gotoSceneIndex=9;
+				control.gotoSceneIndex="playlevels";
 			}
 		}
 	}

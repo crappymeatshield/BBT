@@ -16,7 +16,7 @@ public struct CustomLevel
 
 public class CustomLevelGUI : MenuButtonsScript {
 	public WWW w;
-	public int gotoSceneIndex=0;
+	public string gotoSceneIndex="";
 	public bool loadCustom=false;
 	private bool listdownloaded=false;
 	private List<CustomLevel> CustomLevels = new List<CustomLevel>();
@@ -47,7 +47,7 @@ public class CustomLevelGUI : MenuButtonsScript {
 		else if(loadCustom)
 		{
 			GUI.Box(new Rect(Screen.width*0.25f, Screen.height*0.25f,Screen.width*0.5f, Screen.height*0.5f), "Progress");
-			w = new WWW("http://76.29.1.122/getlevel.php?name=");
+			w = new WWW(ipmain + "getlevel.php?name=");
 			StartCoroutine(getlevels(w));
 			GUI.Label(new Rect(Screen.width*0.4f, Screen.height*0.4f, Screen.width*0.2f, Screen.height*0.2f), "LOADING...");
 			loadCustom=true;

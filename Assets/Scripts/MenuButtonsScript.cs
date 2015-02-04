@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class MenuButtonsScript : achievements {
 	public bool GoToScene=true;
-	public int SceneIndex=0;
+	public string SceneIndex="";
 	public bool Keybindings=false;
 	public bool resolutionbtn=false;
 	public bool QuitButton=false;
