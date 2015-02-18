@@ -773,7 +773,7 @@ public class LevelEditor : Commons {
 								form.AddField("filename", fileName);
 								form.AddField("filetext", strwrite.ToString());
 								//form.AddBinaryData("file", leveldata, fileName, "text/xml");
-								w = new WWW(ipmain + "LevelUpload.php",form);
+								w = new WWW(ipmain + "levelupload.php",form);
 							}
 							else
 							{
@@ -1030,6 +1030,7 @@ public class LevelEditor : Commons {
 		}
 		else
 		{
+			Debug.Log(w.text.ToString());
 			Debug.Log("File Created starting checkfile");
 			StartCoroutine(checkfile(w));
 		}
