@@ -4,14 +4,27 @@ using System.Collections;
 public class MainMenu : achievements {
 	public Texture background;
 	public GUISkin gSkin;
-	public bool CreditScreen = false;
-	public bool OptionScreen = false;
-	public bool Keybindingset=false;
-	public bool Resolutionset=false;
+	public AudioClip MainTheme;
+	public AudioClip LevelSelectTheme;
+	public AudioSource Asource;
+	private static bool LevelSelectScreen = false;
+	private bool CreditScreen = false;
+	private bool OptionScreen = false;
+	private bool Keybindingset=false;
+	private bool Resolutionset=false;
 	private bool InstructScreen = false;
 	private bool bEditingControls=false;
 	private int nControlCounter=0;
 	private int primsec=0;
+
+	void Awake()
+	{
+		if(LevelSelectScreen)
+		{
+			Asource.clip=LevelSelectTheme;
+			Asource.Play();
+		}
+	}
 
 	void OnGUI()
 	{
@@ -248,13 +261,41 @@ public class MainMenu : achievements {
 				CreditScreen = false;
 			}
 		}
+		else if(LevelSelectScreen)
+		{
+			if(GUI.Button(new Rect(Screen.width*0.1f, Screen.height*0.4f, Screen.width*0.15f, Screen.height*0.15f), "1"))
+			{
+				Application.LoadLevel(1);
+			}
+			if(GUI.Button(new Rect(Screen.width*0.3f, Screen.height*0.4f, Screen.width*0.15f, Screen.height*0.15f), "2"))
+			{
+				Application.LoadLevel(2);
+			}
+			if(GUI.Button(new Rect(Screen.width*0.5f, Screen.height*0.4f, Screen.width*0.15f, Screen.height*0.15f), "3"))
+			{
+				Application.LoadLevel(3);
+			}
+			if(GUI.Button(new Rect(Screen.width*0.7f, Screen.height*0.4f, Screen.width*0.15f, Screen.height*0.15f), "4"))
+			{
+				Application.LoadLevel(4);
+			}
+			if (GUI.Button (new Rect (Screen.width * .35f, Screen.height * .9f, Screen.width *.3f, Screen.height *.1f), "Main Menu" )) 
+			{
+				LevelSelectScreen = false;
+				Asource.clip=MainTheme;
+				Asource.Play();
+			}
+		}
 		else
 		{
 			GUI.Label(new Rect (Screen.width * 0.35f, Screen.height * 0.15f, Screen.width * 0.3f, Screen.height * 0.1f), "Bear, Bird, Turtle:");
 			GUI.Label (new Rect (Screen.width * 0.40f, Screen.height * 0.25f, Screen.width * 0.2f, Screen.height * 0.1f), "Infection");
 			if(GUI.Button(new Rect(Screen.width*0.25f, Screen.height*0.4f, Screen.width*0.2f, Screen.height*0.1f), "Play"))
 			{
-				Application.LoadLevel("levelselect");
+				LevelSelectScreen=true;
+				Asource.clip=LevelSelectTheme;
+				Asource.Play();
+				//Application.LoadLevel("levelselect");
 			}
 			if(GUI.Button(new Rect(Screen.width*0.25f, Screen.height*0.525f, Screen.width*0.2f, Screen.height*0.1f), "Instructions"))
 			{

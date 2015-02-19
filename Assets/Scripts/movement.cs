@@ -600,11 +600,9 @@ public class movement : Commons {
 					PauseGame();}
 				if(GUI.Button(new Rect((Screen.width*0.25f)+10, Screen.height/10, (Screen.width*0.25f)-20, 25), "Restart Level")){
 					Application.LoadLevel(Application.loadedLevel);}
-				if(GUI.Button(new Rect((Screen.width*0.5f)+10, Screen.height/10, (Screen.width*0.25f)-20, 25), "Level Select")){
-					Application.LoadLevel(3);}
-				if(GUI.Button(new Rect((Screen.width*0.75f)+10, Screen.height/10, (Screen.width*0.25f)-20, 25), "Main Menu")){
+				if(GUI.Button(new Rect((Screen.width*0.75f)+10, Screen.height/10, (Screen.width*0.25f)-20, 25), "Level Select")){
 					Application.LoadLevel(0);}
-				if(GUI.Button(new Rect(10, (Screen.height/10)*2, (Screen.width*0.25f)-20, 25), "Key Bindings"))
+				if(GUI.Button(new Rect((Screen.width*0.5f)+10, Screen.height/10, (Screen.width*0.25f)-20, 25), "Key Bindings"))
 				{
 					keybindingset=true;
 				}

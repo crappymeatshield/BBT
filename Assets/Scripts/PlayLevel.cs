@@ -38,6 +38,11 @@ public class PlayLevel : Commons {
 				{
 					target = GameObject.CreatePrimitive(PrimitiveType.Cube);
 				}
+				else if(typeofobj=="Turtle"||typeofobj=="Bird")
+				{
+					Quaternion spawn = Quaternion.Euler(0, 90, 0);
+					target = (GameObject)Instantiate(Resources.Load(typeofobj), spawnposition, spawn);
+				}
 				else
 				{
 					target = (GameObject)Instantiate(Resources.Load(obj.typevar), spawnposition, Quaternion.identity);
