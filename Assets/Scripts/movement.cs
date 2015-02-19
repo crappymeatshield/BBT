@@ -475,7 +475,7 @@ public class movement : Commons {
 //					cameraview.SetActive(true);
 //					cameraview= transform.GetChild(0).gameObject;
 //					cameraview.SetActive(false);
-//					moveDirection=Vector3.zero;
+					moveDirection=Vector3.zero;
 					//rigidbody.velocity=Vector3.zero;
 					//GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
 					//camera.transform.parent=bug.transform;

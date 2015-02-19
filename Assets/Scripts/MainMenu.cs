@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MainMenu : Commons {
+public class MainMenu : achievements {
 	public Texture background;
 	public GUISkin gSkin;
+	public bool CreditScreen = false;
 	public bool OptionScreen = false;
 	public bool Keybindingset=false;
 	public bool Resolutionset=false;
@@ -238,6 +239,15 @@ public class MainMenu : Commons {
 				InstructScreen = false;
 			}
 		}
+		else if(CreditScreen)
+		{
+			GUI.Label(new Rect (Screen.width *.25f ,Screen.height *.05f,(Screen.width * .5f),Screen.height *.05f), "Credit Screen");
+			GUI.Label (new Rect (Screen.width * .35f, Screen.height * .2f, Screen.width *.25f, Screen.height *.1f), "Credits go here");
+			if (GUI.Button (new Rect (Screen.width * .35f, Screen.height * .9f, Screen.width *.3f, Screen.height *.1f), "Back" )) 
+			{
+				CreditScreen = false;
+			}
+		}
 		else
 		{
 			GUI.Label(new Rect (Screen.width * 0.35f, Screen.height * 0.15f, Screen.width * 0.3f, Screen.height * 0.1f), "Bear, Bird, Turtle:");
@@ -254,7 +264,11 @@ public class MainMenu : Commons {
 			{
 				OptionScreen=true;
 			}
-			if(GUI.Button(new Rect(Screen.width*0.4f, Screen.height*0.775f, Screen.width*0.2f, Screen.height*0.1f), "Quit"))
+			if(GUI.Button(new Rect(Screen.width*0.25f, Screen.height*0.775f, Screen.width*0.2f, Screen.height*0.1f), "Credits"))
+			{
+				CreditScreen=true;
+			}
+			if(GUI.Button(new Rect(Screen.width*0.55f, Screen.height*0.775f, Screen.width*0.2f, Screen.height*0.1f), "Quit"))
 			{
 				Application.Quit();
 			}
