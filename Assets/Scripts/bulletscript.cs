@@ -44,7 +44,7 @@ public class bulletscript : MonoBehaviour {
 			}
 		}
 		//Debug.Log(moveDirection.ToString());
-		rigidbody.velocity=moveDirection;
+		GetComponent<Rigidbody>().velocity=moveDirection;
 	}
 	
 	void OnCollisionEnter(Collision hit)

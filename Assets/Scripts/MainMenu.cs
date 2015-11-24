@@ -319,15 +319,15 @@ public class MainMenu : achievements {
 			}
 			if(GUI.Button(new Rect(Screen.width*0.55f, Screen.height*0.525f, Screen.width*0.2f, Screen.height*0.1f), "Level Editor"))
 			{
-				Application.LoadLevel("leveleditor");
+				//Application.LoadLevel("leveleditor");
 			}
 			if(GUI.Button(new Rect(Screen.width*0.55f, Screen.height*0.65f, Screen.width*0.2f, Screen.height*0.1f), "Play Custom Level"))
 			{
-				GameObject camera = null;
-				camera=GameObject.FindGameObjectWithTag("MainCamera");
-				CustomLevelGUI control = (CustomLevelGUI) camera.gameObject.GetComponent(typeof(CustomLevelGUI));
-				control.loadCustom=true;
-				control.gotoSceneIndex="playlevels";
+				//GameObject camera = null;
+				//camera=GameObject.FindGameObjectWithTag("MainCamera");
+				//CustomLevelGUI control = (CustomLevelGUI) camera.gameObject.GetComponent(typeof(CustomLevelGUI));
+				//control.loadCustom=true;
+				//control.gotoSceneIndex="playlevels";
 			}
 		}
 	}

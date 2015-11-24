@@ -22,40 +22,40 @@ public class AudioHandle : MonoBehaviour {
 	}
 
 	void Aura() {
-		audio.PlayOneShot(chime);
+		GetComponent<AudioSource>().PlayOneShot(chime);
 	}
 	void Bubble() {
-		audio.PlayOneShot(bubble);
+		GetComponent<AudioSource>().PlayOneShot(bubble);
 	}
 	void Chime() {
-		audio.PlayOneShot(chime);
+		GetComponent<AudioSource>().PlayOneShot(chime);
 	}
 	void ClickUp() {
-		audio.PlayOneShot(cUp);
+		GetComponent<AudioSource>().PlayOneShot(cUp);
 	}
 	void ClickDown() {
-		audio.PlayOneShot(cDw);
+		GetComponent<AudioSource>().PlayOneShot(cDw);
 	}
 	void Crack() {
-		audio.PlayOneShot(crack);
+		GetComponent<AudioSource>().PlayOneShot(crack);
 	}
 	void Die() {
-		audio.PlayOneShot(lost);
+		GetComponent<AudioSource>().PlayOneShot(lost);
 	}
 	void Ding() {
-		audio.PlayOneShot(ding);
+		GetComponent<AudioSource>().PlayOneShot(ding);
 	}
 	void Grunt() {
-		audio.PlayOneShot(grunt);
+		GetComponent<AudioSource>().PlayOneShot(grunt);
 	}
 	void Site() {
-		audio.PlayOneShot(site);
+		GetComponent<AudioSource>().PlayOneShot(site);
 	}
 	void Tweet() {
-		audio.PlayOneShot(tweet);
+		GetComponent<AudioSource>().PlayOneShot(tweet);
 	}
 	void Urp() {
-		audio.PlayOneShot(urp);
+		GetComponent<AudioSource>().PlayOneShot(urp);
 	}
 
 

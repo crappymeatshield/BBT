@@ -28,55 +28,55 @@ public class LevelSelect : achievements {
 				{
 					if(getcomplete(levelnum))
 					{
-						transform.renderer.material.color=Color.yellow;
+						transform.GetComponent<Renderer>().material.color=Color.yellow;
 					}
 					else
 					{
-						transform.renderer.material.color=Color.grey;
+						transform.GetComponent<Renderer>().material.color=Color.grey;
 					}
 				}
 				else if(alive)
 				{
 					if(getalive(levelnum))
 					{
-						transform.renderer.material.color=Color.yellow;
+						transform.GetComponent<Renderer>().material.color=Color.yellow;
 					}
 					else
 					{
-						transform.renderer.material.color=Color.grey;
+						transform.GetComponent<Renderer>().material.color=Color.grey;
 					}
 				}
 				else if(dead)
 				{
 					if(getdead(levelnum))
 					{
-						transform.renderer.material.color=Color.yellow;
+						transform.GetComponent<Renderer>().material.color=Color.yellow;
 					}
 					else
 					{
-						transform.renderer.material.color=Color.grey;
+						transform.GetComponent<Renderer>().material.color=Color.grey;
 					}
 				}
 				else if(bacon)
 				{
 					if(getbacon(levelnum))
 					{
-						transform.renderer.material.color=Color.yellow;
+						transform.GetComponent<Renderer>().material.color=Color.yellow;
 					}
 					else
 					{
-						transform.renderer.material.color=Color.grey;
+						transform.GetComponent<Renderer>().material.color=Color.grey;
 					}
 				}
 				else if(time)
 				{
 					if(gettime(levelnum))
 					{
-						transform.renderer.material.color=Color.yellow;
+						transform.GetComponent<Renderer>().material.color=Color.yellow;
 					}
 					else
 					{
-						transform.renderer.material.color=Color.grey;
+						transform.GetComponent<Renderer>().material.color=Color.grey;
 					}
 				}
 			}
@@ -88,55 +88,55 @@ public class LevelSelect : achievements {
 					{
 						if(getBonuscomplete(levelnum))
 						{
-							transform.renderer.material.color=Color.yellow;
+							transform.GetComponent<Renderer>().material.color=Color.yellow;
 						}
 						else
 						{
-							transform.renderer.material.color=Color.grey;
+							transform.GetComponent<Renderer>().material.color=Color.grey;
 						}
 					}
 					else if(alive)
 					{
 						if(getBonusalive(levelnum))
 						{
-							transform.renderer.material.color=Color.yellow;
+							transform.GetComponent<Renderer>().material.color=Color.yellow;
 						}
 						else
 						{
-							transform.renderer.material.color=Color.grey;
+							transform.GetComponent<Renderer>().material.color=Color.grey;
 						}
 					}
 					else if(dead)
 					{
 						if(getBonusdead(levelnum))
 						{
-							transform.renderer.material.color=Color.yellow;
+							transform.GetComponent<Renderer>().material.color=Color.yellow;
 						}
 						else
 						{
-							transform.renderer.material.color=Color.grey;
+							transform.GetComponent<Renderer>().material.color=Color.grey;
 						}
 					}
 					else if(bacon)
 					{
 						if(getBonusbacon(levelnum))
 						{
-							transform.renderer.material.color=Color.yellow;
+							transform.GetComponent<Renderer>().material.color=Color.yellow;
 						}
 						else
 						{
-							transform.renderer.material.color=Color.grey;
+							transform.GetComponent<Renderer>().material.color=Color.grey;
 						}
 					}
 					else if(time)
 					{
 						if(getBonustime(levelnum))
 						{
-							transform.renderer.material.color=Color.yellow;
+							transform.GetComponent<Renderer>().material.color=Color.yellow;
 						}
 						else
 						{
-							transform.renderer.material.color=Color.grey;
+							transform.GetComponent<Renderer>().material.color=Color.grey;
 						}
 					}
 					if(!showing)

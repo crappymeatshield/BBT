@@ -176,7 +176,7 @@ public class movement : Commons {
 			float healthpercent= (float)health/maxhealth;
 			healthpercent = 100;
 			hpbarlength = healthpercent*redbarpercentlength;
-			redhb.guiTexture.pixelInset=new Rect(10,10,hpbarlength,5);
+			redhb.GetComponent<GUITexture>().pixelInset=new Rect(10,10,hpbarlength,5);
 		}
 		if(health>0&&!editormode)
 		{
@@ -195,7 +195,7 @@ public class movement : Commons {
 			float healthpercent= (float)health/maxhealth;
 			healthpercent = healthpercent * 100;
 			greenhpbarlength = healthpercent*redbarpercentlength;
-			greenhb.guiTexture.pixelInset=new Rect(10,10,greenhpbarlength,5);
+			greenhb.GetComponent<GUITexture>().pixelInset=new Rect(10,10,greenhpbarlength,5);
 		}
 		if(invun)
 		{
