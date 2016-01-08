@@ -1,0 +1,363 @@
+fileFormatVersion: 2
+guid: a8c4347adaa7dcb469f758bb20d94cc5
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BLFoot
+    100004: BLFoot_001
+    100006: BLHip
+    100008: BLLeg
+    100010: BRFoot
+    100012: BRFoot_001
+    100014: BRHip
+    100016: BRLeg
+    100018: Camera
+    100020: FLArm
+    100022: FLFoot
+    100024: FLFoot_001
+    100026: FLShoulder
+    100028: FRArm
+    100030: FRFoot
+    100032: FRFoot_001
+    100034: FRShoulder
+    100036: Lamp
+    100038: Midbone
+    100040: Turtle
+    100042: Turtle_MeshPart0
+    100044: Turtle_MeshPart1
+    100046: Turtle_MeshPart2
+    100048: //RootNode
+    400000: Armature
+    400002: BLFoot
+    400004: BLFoot_001
+    400006: BLHip
+    400008: BLLeg
+    400010: BRFoot
+    400012: BRFoot_001
+    400014: BRHip
+    400016: BRLeg
+    400018: Camera
+    400020: FLArm
+    400022: FLFoot
+    400024: FLFoot_001
+    400026: FLShoulder
+    400028: FRArm
+    400030: FRFoot
+    400032: FRFoot_001
+    400034: FRShoulder
+    400036: Lamp
+    400038: Midbone
+    400040: Turtle
+    400042: Turtle_MeshPart0
+    400044: Turtle_MeshPart1
+    400046: Turtle_MeshPart2
+    400048: //RootNode
+    4300000: Turtle_MeshPart0
+    4300002: Turtle_MeshPart1
+    4300004: Turtle_MeshPart2
+    7400000: Swimming
+    7400002: walking
+    7400004: still
+    9500000: //RootNode
+    13700000: Turtle_MeshPart0
+    13700002: Turtle_MeshPart1
+    13700004: Turtle_MeshPart2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Swimming
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BLHip
+        weight: 1
+      - path: Armature/BLHip/BLLeg
+        weight: 1
+      - path: Armature/BLHip/BLLeg/BLFoot
+        weight: 1
+      - path: Armature/BLHip/BLLeg/BLFoot/BLFoot_001
+        weight: 1
+      - path: Armature/BRHip
+        weight: 1
+      - path: Armature/BRHip/BRLeg
+        weight: 1
+      - path: Armature/BRHip/BRLeg/BRFoot
+        weight: 1
+      - path: Armature/BRHip/BRLeg/BRFoot/BRFoot_001
+        weight: 1
+      - path: Armature/Midbone
+        weight: 1
+      - path: Armature/Midbone/FLShoulder
+        weight: 1
+      - path: Armature/Midbone/FLShoulder/FLArm
+        weight: 1
+      - path: Armature/Midbone/FLShoulder/FLArm/FLFoot
+        weight: 1
+      - path: Armature/Midbone/FLShoulder/FLArm/FLFoot/FLFoot_001
+        weight: 1
+      - path: Armature/Midbone/FRShoulder
+        weight: 1
+      - path: Armature/Midbone/FRShoulder/FRArm
+        weight: 1
+      - path: Armature/Midbone/FRShoulder/FRArm/FRFoot
+        weight: 1
+      - path: Armature/Midbone/FRShoulder/FRArm/FRFoot/FRFoot_001
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Turtle
+        weight: 1
+      - path: Turtle/Turtle_MeshPart0
+        weight: 1
+      - path: Turtle/Turtle_MeshPart1
+        weight: 1
+      - path: Turtle/Turtle_MeshPart2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walking
+      takeName: ArmatureAction_001
+      firstFrame: 41
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BLHip
+        weight: 1
+      - path: Armature/BLHip/BLLeg
+        weight: 1
+      - path: Armature/BLHip/BLLeg/BLFoot
+        weight: 1
+      - path: Armature/BLHip/BLLeg/BLFoot/BLFoot_001
+        weight: 1
+      - path: Armature/BRHip
+        weight: 1
+      - path: Armature/BRHip/BRLeg
+        weight: 1
+      - path: Armature/BRHip/BRLeg/BRFoot
+        weight: 1
+      - path: Armature/BRHip/BRLeg/BRFoot/BRFoot_001
+        weight: 1
+      - path: Armature/Midbone
+        weight: 1
+      - path: Armature/Midbone/FLShoulder
+        weight: 1
+      - path: Armature/Midbone/FLShoulder/FLArm
+        weight: 1
+      - path: Armature/Midbone/FLShoulder/FLArm/FLFoot
+        weight: 1
+      - path: Armature/Midbone/FLShoulder/FLArm/FLFoot/FLFoot_001
+        weight: 1
+      - path: Armature/Midbone/FRShoulder
+        weight: 1
+      - path: Armature/Midbone/FRShoulder/FRArm
+        weight: 1
+      - path: Armature/Midbone/FRShoulder/FRArm/FRFoot
+        weight: 1
+      - path: Armature/Midbone/FRShoulder/FRArm/FRFoot/FRFoot_001
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Turtle
+        weight: 1
+      - path: Turtle/Turtle_MeshPart0
+        weight: 1
+      - path: Turtle/Turtle_MeshPart1
+        weight: 1
+      - path: Turtle/Turtle_MeshPart2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: still
+      takeName: Default Take
+      firstFrame: 81
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BLHip
+        weight: 1
+      - path: Armature/BLHip/BLLeg
+        weight: 1
+      - path: Armature/BLHip/BLLeg/BLFoot
+        weight: 1
+      - path: Armature/BLHip/BLLeg/BLFoot/BLFoot_001
+        weight: 1
+      - path: Armature/BRHip
+        weight: 1
+      - path: Armature/BRHip/BRLeg
+        weight: 1
+      - path: Armature/BRHip/BRLeg/BRFoot
+        weight: 1
+      - path: Armature/BRHip/BRLeg/BRFoot/BRFoot_001
+        weight: 1
+      - path: Armature/Midbone
+        weight: 1
+      - path: Armature/Midbone/FLShoulder
+        weight: 1
+      - path: Armature/Midbone/FLShoulder/FLArm
+        weight: 1
+      - path: Armature/Midbone/FLShoulder/FLArm/FLFoot
+        weight: 1
+      - path: Armature/Midbone/FLShoulder/FLArm/FLFoot/FLFoot_001
+        weight: 1
+      - path: Armature/Midbone/FRShoulder
+        weight: 1
+      - path: Armature/Midbone/FRShoulder/FRArm
+        weight: 1
+      - path: Armature/Midbone/FRShoulder/FRArm/FRFoot
+        weight: 1
+      - path: Armature/Midbone/FRShoulder/FRArm/FRFoot/FRFoot_001
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Turtle
+        weight: 1
+      - path: Turtle/Turtle_MeshPart0
+        weight: 1
+      - path: Turtle/Turtle_MeshPart1
+        weight: 1
+      - path: Turtle/Turtle_MeshPart2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.35
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
